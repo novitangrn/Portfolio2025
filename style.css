@@ -1,87 +1,195 @@
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #111;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(#00dbde, #fc00ff);
-    border-radius: 4px;
-}
-
-/* Body styling */
+/* Main styles */
 body {
-    background-color: #0a0a0a !important;
-    color: #e0e0e0 !important;
-    font-family: 'Space Grotesk', sans-serif !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    line-height: 1.6;
 }
 
-/* Card hover effect */
-.card-hover {
+/* Header styles */
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3a7bd5;
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a1c4fd;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 2rem;
+}
+
+.social-badges {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-badges img {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+.nav-item {
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 5px;
+    cursor: pointer;
     transition: all 0.3s ease;
+    color: #ffffff;
 }
 
-.card-hover:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 30px rgba(0, 219, 222, 0.2);
+.nav-item:hover {
+    background: rgba(58, 123, 213, 0.2);
+    transform: translateX(5px);
 }
 
-/* Floating animation */
-@keyframes floating {
+/* Content sections */
+.about-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.education-details, .job-title, .company {
+    margin-bottom: 0.5rem;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #3a7bd5;
+}
+
+.company {
+    font-style: italic;
+    color: #a1c4fd;
+    margin-bottom: 1rem;
+}
+
+.job-description {
+    padding-left: 1.5rem;
+}
+
+.job-description li {
+    margin-bottom: 0.5rem;
+}
+
+/* Projects */
+.project-shelf-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.project-details-title {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.project-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-details ul {
+    padding-left: 1.5rem;
+}
+
+.project-details li {
+    margin-bottom: 0.5rem;
+}
+
+/* Skills */
+.skills-category {
+    margin-bottom: 2rem;
+}
+
+.skills-category h4 {
+    color: #3a7bd5;
+    margin-bottom: 0.5rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: rgba(58, 123, 213, 0.2);
+    color: #ffffff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin: 0.3rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(58, 123, 213, 0.5);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animation for elements */
+@keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
+    50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
 }
 
 .floating {
-    animation: floating 6s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
-.floating-delay-1 {
-    animation-delay: 1s;
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .contact-info {
+        font-size: 0.9rem;
+    }
 }
-
-.floating-delay-2 {
-    animation-delay: 2s;
-}
-
-.floating-delay-3 {
-    animation-delay: 3s;
-}
-
-/* Skill pill hover */
-.skill-pill:hover {
-    background: linear-gradient(90deg, #00dbde, #fc00ff) !important;
-    transform: scale(1.05);
-}
-
-/* Custom styling for Streamlit elements */
-.stTextInput > div > div > input,
-.stTextArea > div > div > textarea {
-    background-color: #1e1e1e !important;
-    color: white !important;
-    border: 1px solid #444 !important;
-}
-
-.stTextInput > label,
-.stTextArea > label {
-    color: #ccc !important;
-}
-
-.stButton > button {
-    width: 100%;
-    background: linear-gradient(90deg, #00dbde, #fc00ff) !important;
-    color: white !important;
-    border: none !important;
-}
-
-.stButton > button:hover {
-    opacity: 0.9 !important;
-}
-
-/* Hide Streamlit menu and footer */
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
