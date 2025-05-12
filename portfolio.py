@@ -9,7 +9,7 @@ import time
 
 # Page configuration
 st.set_page_config(
-    page_title="Novi Aini | Data Science Portfolio",
+    page_title="Novita Anggraini | Data Science Portfolio",
     page_icon="🚀",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -301,10 +301,10 @@ def navigation():
 def header_section():
     col1, col2 = st.columns([3, 2])
     with col1:
-        st.markdown("<h1 id='home'>NOVI AINI</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 id='home'>NOVITA ANGGRAINI</h1>", unsafe_allow_html=True)
         st.markdown("""
         <div class="subtitle">
-            Data Scientist | Machine Learning Engineer | AI Enthusiast
+            Data Analyst | Machine Learning Engineer | AI Enthusiast
         </div>
         <div class="contact-info">
             <i class="fas fa-envelope"></i> novi@gmail.com | 
@@ -317,9 +317,9 @@ def header_section():
         # Social badges
         st.markdown("""
         <div class="social-badges">
-            <a href="https://linkedin.com/in/novi" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-            <a href="https://github.com/novi" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-            <a href="mailto:novi@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+            <a href="https://linkedin.com/in/novitaangrn" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+            <a href="https://github.com/novitangrn" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+            <a href="mailto:novianggraini.mail@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
         </div>
         """, unsafe_allow_html=True)
         
@@ -586,7 +586,7 @@ def main():
     # Footer
     st.markdown("""
     <div class="footer">
-        © 2024 Novi Aini | Built with Streamlit
+        © 2025 Novita Anggraini
     </div>
     """, unsafe_allow_html=True)
 
