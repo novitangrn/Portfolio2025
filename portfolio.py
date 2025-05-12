@@ -46,13 +46,13 @@ def navigation():
     with cols[0]:
         st.markdown("<h3 style='font-weight:bold;'>NOVI A</h3>", unsafe_allow_html=True)
     with cols[2]:
-        st.page_link("#about", label="About")
+        st.markdown('<a href="#about" style="color: white; text-decoration: none;">About</a>', unsafe_allow_html=True)
     with cols[3]:
-        st.page_link("#experience", label="Experience")
+        st.markdown('<a href="#experience" style="color: white; text-decoration: none;">Experience</a>', unsafe_allow_html=True)
     with cols[4]:
-        st.page_link("#projects", label="Projects")
+        st.markdown('<a href="#projects" style="color: white; text-decoration: none;">Projects</a>', unsafe_allow_html=True)
     with cols[5]:
-        st.page_link("#contact", label="Contact")
+        st.markdown('<a href="#contact" style="color: white; text-decoration: none;">Contact</a>', unsafe_allow_html=True)
 
 # Hero Section
 def hero_section():
