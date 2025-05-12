@@ -307,9 +307,9 @@ def header_section():
             Data Analyst | Machine Learning Engineer | AI Enthusiast
         </div>
         <div class="contact-info">
-            <i class="fas fa-envelope"></i> novi@gmail.com | 
-            <i class="fab fa-linkedin"></i> linkedin.com/in/novi | 
-            <i class="fab fa-github"></i> github.com/novi<br>
+            <i class="fas fa-envelope"></i> novianggraini.mail@gmail.com | 
+            <i class="fab fa-linkedin"></i> linkedin.com/in/novitaangrn | 
+            <i class="fab fa-github"></i> github.com/novitangrn<br>
             <i class="fas fa-map-marker-alt"></i> Surabaya, East Java
         </div>
         """, unsafe_allow_html=True)
