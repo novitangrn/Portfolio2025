@@ -424,7 +424,9 @@ def projects_section():
     
     st.markdown("<h3 class='project-details-title'>Project Details</h3>", unsafe_allow_html=True)
     
-    with st.expander("QuantiNews: Stock Prediction using Spatial-Temporal Attention-Based Convolutional Network (2025)", id="quantinews"):
+    # Create anchor points first
+    st.markdown("<div id='quantinews'></div>", unsafe_allow_html=True)
+    with st.expander("QuantiNews: Stock Prediction using Spatial-Temporal Attention-Based Convolutional Network (2025)"):
         st.markdown("""
         <div class="project-details">
             <ul>
@@ -435,7 +437,8 @@ def projects_section():
         </div>
         """, unsafe_allow_html=True)
     
-    with st.expander("Implementation of Data Warehouse on Amazon Prime Userbase Dataset Using Pentaho & Tableau (2024)", id="data-warehouse"):
+    st.markdown("<div id='data-warehouse'></div>", unsafe_allow_html=True)
+    with st.expander("Implementation of Data Warehouse on Amazon Prime Userbase Dataset Using Pentaho & Tableau (2024)"):
         st.markdown("""
         <div class="project-details">
             <ul>
@@ -445,7 +448,8 @@ def projects_section():
         </div>
         """, unsafe_allow_html=True)
     
-    with st.expander("Database Development for CodeIgniter-Based Website (2024)", id="database-dev"):
+    st.markdown("<div id='database-dev'></div>", unsafe_allow_html=True)
+    with st.expander("Database Development for CodeIgniter-Based Website (2024)"):
         st.markdown("""
         <div class="project-details">
             <ul>
@@ -455,7 +459,8 @@ def projects_section():
         </div>
         """, unsafe_allow_html=True)
     
-    with st.expander("Synop Validators to Minimize Code-Writing Errors (2023)", id="synop-validator"):
+    st.markdown("<div id='synop-validator'></div>", unsafe_allow_html=True)
+    with st.expander("Synop Validators to Minimize Code-Writing Errors (2023)"):
         st.markdown("""
         <div class="project-details">
             <ul>
@@ -465,7 +470,8 @@ def projects_section():
         </div>
         """, unsafe_allow_html=True)
     
-    with st.expander("Time Series Analysis and Forecasting for Upper Air and Synoptic Observation Data (2023)", id="time-series"):
+    st.markdown("<div id='time-series'></div>", unsafe_allow_html=True)
+    with st.expander("Time Series Analysis and Forecasting for Upper Air and Synoptic Observation Data (2023)"):
         st.markdown("""
         <div class="project-details">
             <ul>
@@ -475,7 +481,8 @@ def projects_section():
         </div>
         """, unsafe_allow_html=True)
     
-    with st.expander("Text Classification in NLP for Text-Based News Topic Detection (2022)", id="text-classification"):
+    st.markdown("<div id='text-classification'></div>", unsafe_allow_html=True)
+    with st.expander("Text Classification in NLP for Text-Based News Topic Detection (2022)"):
         st.markdown("""
         <div class="project-details">
             <ul>
@@ -485,7 +492,7 @@ def projects_section():
             </ul>
         </div>
         """, unsafe_allow_html=True)
-
+        
 # Skills Section
 def skills_section():
     st.markdown("<h2 id='skills'>SKILLS</h2>", unsafe_allow_html=True)
