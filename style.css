@@ -193,3 +193,54 @@ h3 {
         font-size: 0.9rem;
     }
 }
+
+
+/* ==============================
+   Light Theme Auto-Override
+============================== */
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(135deg, #f0f0f0, #ffffff);
+        color: #000000;
+    }
+
+    h2, h3, .project-shelf-title, .project-details-title {
+        color: #000000;
+        border-color: #3a7bd5;
+    }
+
+    .subtitle {
+        color: #1a1a1a;
+    }
+
+    .contact-info, .footer {
+        color: #555555;
+    }
+
+    .about-content, .project-details {
+        background: rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-tag {
+        background: rgba(58, 123, 213, 0.1);
+        color: #000000;
+        border: 1px solid rgba(58, 123, 213, 0.3);
+    }
+
+    .job-title {
+        color: #1a5df1;
+    }
+
+    .company {
+        color: #4a4a4a;
+    }
+
+    .nav-item {
+        color: #000000;
+    }
+
+    .nav-item:hover {
+        background: rgba(58, 123, 213, 0.1);
+    }
+}
