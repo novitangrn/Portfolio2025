@@ -336,7 +336,7 @@ def header_section():
                 key="coding",
             )
         else:
-            st.image("assets/profile.png", width=200)
+            st.image("assets/profile.jpg", width=200)
 
 # About Section
 def about_section():
